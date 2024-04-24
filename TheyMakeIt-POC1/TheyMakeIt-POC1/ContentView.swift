@@ -22,6 +22,7 @@ struct ContentView: View {
                     Text("2020")
                 }
             }
+            .padding()
             
             VStack {
                 HStack {
@@ -39,8 +40,10 @@ struct ContentView: View {
                 Text("Télécommunications")
                 Text("Ingénierie aéronautique")
             }
+            .padding()
             
             Text("Hedy Lamarr était une actrice autrichienne qui a également été une inventrice prolifique. Elle est surtout connue pour son invention avec George Antheil, du système de saut de fréquence, une technologie fondamentale pour les communications sans fil modernes.")
+                .padding()
         }
     }
 }
