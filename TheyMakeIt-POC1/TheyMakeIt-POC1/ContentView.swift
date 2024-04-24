@@ -12,10 +12,15 @@ struct ContentView: View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+                .foregroundStyle(.orange)
+            Text("Hedy Lamarr")
+            Text("1914 - 2020")
+            Text("Actrice Inventrice")
+            Text("Autrichienne Américaine")
+            Text("Télécommunications")
+            Text("Ingénierie aéronautique")
+            Text("Hedy Lamarr était une actrice autrichienne qui a également été une inventrice prolifique. Elle est surtout connue pour son invention avec George Antheil, du système de saut de fréquence, une technologie fondamentale pour les communications sans fil modernes.")
         }
-        .padding()
     }
 }
 
