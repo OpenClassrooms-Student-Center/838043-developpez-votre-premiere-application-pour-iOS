@@ -12,6 +12,7 @@
 		42890FE82BD8253D004BEEB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42890FE72BD8253D004BEEB7 /* Assets.xcassets */; };
 		42890FEB2BD8253D004BEEB7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42890FEA2BD8253D004BEEB7 /* Preview Assets.xcassets */; };
 		42AD47992BDBE557006F3250 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD47982BDBE557006F3250 /* Model.swift */; };
+		42AD479B2BDBE64B006F3250 /* ListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD479A2BDBE64B006F3250 /* ListingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		42890FE72BD8253D004BEEB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42890FEA2BD8253D004BEEB7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		42AD47982BDBE557006F3250 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		42AD479A2BDBE64B006F3250 /* ListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				42890FE52BD8253C004BEEB7 /* ContentView.swift */,
 				42AD47982BDBE557006F3250 /* Model.swift */,
 				42890FE72BD8253D004BEEB7 /* Assets.xcassets */,
+				42AD479A2BDBE64B006F3250 /* ListingView.swift */,
 				42890FE92BD8253D004BEEB7 /* Preview Content */,
 			);
 			path = "TheyMakeIt-POC1";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42AD47992BDBE557006F3250 /* Model.swift in Sources */,
+				42AD479B2BDBE64B006F3250 /* ListingView.swift in Sources */,
 				42890FE62BD8253C004BEEB7 /* ContentView.swift in Sources */,
 				42890FE42BD8253C004BEEB7 /* TheyMakeIt_POC1App.swift in Sources */,
 			);
