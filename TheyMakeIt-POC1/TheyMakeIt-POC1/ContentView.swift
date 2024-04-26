@@ -8,22 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    let femme: Femme
+    
     var body: some View {
         GeometryReader { geometry in
             VStack {
-                Image("Hedy")
+                Image(femme.nomImage)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: geometry.size.width)
                 
                 VStack {
-                    Text("Hedy Lamarr")
+                    Text(femme.nom)
                         .font(.title)
-                        .bold()
+                        .fontWeight(.bold)
                     HStack {
-                        Text("1914")
+                        Text(femme.anneeNaissance)
                         Text("-")
-                        Text("2020")
+                        Text(femme.anneeDeces)
                     }
                     .font(.headline)
                     .foregroundStyle(.darkGrey)
@@ -34,40 +36,39 @@ struct ContentView: View {
                 
                 VStack {
                     HStack {
-                        Text("Actrice")
-                        Text("Inventrice")
+                        ForEach(femme.metiers, id: \.self) { metier in
+                            Text(metier)
+                        }
                     }
                     .font(.title3)
                     
                     HStack {
-                        Text("Autrichienne")
-                        Text("Américaine")
+                        ForEach(femme.nationalites, id: \.self) { nationalite in
+                            Text(nationalite)
+                        }
                     }
                     .foregroundStyle(.darkGrey)
                 }
                 
                 VStack {
-                    Text("Télécommunications")
-                        .bold()
-                        .padding(8)
-                        .background(RoundedRectangle(cornerRadius: 10).fill(.purple))
-                        .foregroundStyle(.white)
-                    Text("Ingénierie aéronautique")
-                        .bold()
-                        .padding(8)
-                        .background(.purple)
-                        .foregroundStyle(.white)
-                        .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                    ForEach(femme.reussites, id: \.self) { reussite in
+                        Text(reussite)
+                            .fontWeight(.bold)
+                            .padding(8)
+                            .background(RoundedRectangle(cornerRadius: 10).fill(.purple))
+                            .foregroundStyle(.white)
+                    }
                 }
                 .padding()
                 
-                Text("Hedy Lamarr était une actrice autrichienne qui a également été une inventrice prolifique. Elle est surtout connue pour son invention avec George Antheil, du système de saut de fréquence, une technologie fondamentale pour les communications sans fil modernes.")
+                Text(femme.description)
                     .font(.callout)
                     .padding()
             }
         }
     }
 }
+
 
 
 #Preview {
