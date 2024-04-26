@@ -20,15 +20,23 @@ struct ListingView: View {
     ]
     
     var body: some View {
-        List(listeFemmes, id: \.nom){ femme in
-            HStack {
-                Image(femme.nomImage)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 70, height: 70)
-                    .clipShape(Circle())
-                Text(femme.nom)
+        NavigationSplitView{
+            List(listeFemmes, id: \.nom){ femme in
+                NavigationLink {
+                    ContentView()
+                } label: {
+                    HStack {
+                        Image(femme.nomImage)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 70, height: 70)
+                            .clipShape(Circle())
+                        Text(femme.nom)
+                    }
+                }
             }
+        } detail: {
+            Text("Sélectionnez une femme de la liste pour en savoir plus")
         }
     }
 }
