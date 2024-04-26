@@ -11,7 +11,7 @@ import SwiftUI
 struct TheyMakeIt_POC2App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ListingView()
         }
     }
 }
