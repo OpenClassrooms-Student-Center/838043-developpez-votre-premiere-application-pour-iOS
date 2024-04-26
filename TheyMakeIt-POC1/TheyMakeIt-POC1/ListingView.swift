@@ -23,7 +23,7 @@ struct ListingView: View {
         NavigationSplitView{
             List(listeFemmes, id: \.nom){ femme in
                 NavigationLink {
-                    ContentView()
+                    ContentView(femme: femme)
                 } label: {
                     HStack {
                         Image(femme.nomImage)

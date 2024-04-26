@@ -69,8 +69,6 @@ struct ContentView: View {
     }
 }
 
-
-
 #Preview {
-    ContentView()
+    ContentView(femme: Femme(nom: "Ada Lovelace", metiers: ["Développeuse", "Poétesse"], nomImage: "Ada", anneeNaissance: "1815", anneeDeces: "1852", nationalites: ["Britanique"], reussites: ["Première développeuse", "Calculs numériques"], description: "Elle est principalement connue pour avoir réalisé le premier véritable programme informatique, lors de son travail sur un ancêtre de l'ordinateur : la machine analytique de Charles Babbage. Sa vision avant-gardiste de l'utilisation des ordinateurs et des algorithmes a ouvert la voie à l'ère de l'informatique moderne, faisant d'elle une figure emblématique de la technologie."))
 }
