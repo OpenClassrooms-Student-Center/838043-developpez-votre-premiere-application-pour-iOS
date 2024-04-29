@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4283B9A52BDFA58A00755F29 /* BubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4283B9A42BDFA58A00755F29 /* BubbleView.swift */; };
 		42890FE42BD8253C004BEEB7 /* TheyMakeIt_POC1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42890FE32BD8253C004BEEB7 /* TheyMakeIt_POC1App.swift */; };
 		42890FE62BD8253C004BEEB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42890FE52BD8253C004BEEB7 /* ContentView.swift */; };
 		42890FE82BD8253D004BEEB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42890FE72BD8253D004BEEB7 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4283B9A42BDFA58A00755F29 /* BubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
 		42890FE02BD8253C004BEEB7 /* TheyMakeIt-POC1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TheyMakeIt-POC1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42890FE32BD8253C004BEEB7 /* TheyMakeIt_POC1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheyMakeIt_POC1App.swift; sourceTree = "<group>"; };
 		42890FE52BD8253C004BEEB7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 				42890FE32BD8253C004BEEB7 /* TheyMakeIt_POC1App.swift */,
 				42890FE52BD8253C004BEEB7 /* ContentView.swift */,
 				42AD47982BDBE557006F3250 /* Model.swift */,
+				4283B9A42BDFA58A00755F29 /* BubbleView.swift */,
 				42890FE72BD8253D004BEEB7 /* Assets.xcassets */,
 				42AD479A2BDBE64B006F3250 /* ListingView.swift */,
 				42890FE92BD8253D004BEEB7 /* Preview Content */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4283B9A52BDFA58A00755F29 /* BubbleView.swift in Sources */,
 				42AD47992BDBE557006F3250 /* Model.swift in Sources */,
 				42AD479B2BDBE64B006F3250 /* ListingView.swift in Sources */,
 				42890FE62BD8253C004BEEB7 /* ContentView.swift in Sources */,

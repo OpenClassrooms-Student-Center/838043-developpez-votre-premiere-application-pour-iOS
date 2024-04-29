@@ -52,11 +52,7 @@ struct ContentView: View {
                 
                 VStack {
                     ForEach(femme.reussites, id: \.self) { reussite in
-                        Text(reussite)
-                            .fontWeight(.bold)
-                            .padding(8)
-                            .background(RoundedRectangle(cornerRadius: 10).fill(.purple))
-                            .foregroundStyle(.white)
+                        BubbleView()
                     }
                 }
                 .padding()
