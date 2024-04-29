@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct BubbleView: View {
+    let titre: String
+    
     var body: some View {
-        Text("Première développeuse")
+        Text(titre)
             .fontWeight(.bold)
             .padding(8)
             .background(RoundedRectangle(cornerRadius: 10).fill(.purple))
@@ -18,5 +20,5 @@ struct BubbleView: View {
 }
 
 #Preview {
-    BubbleView()
+    BubbleView(titre: "premiere developpeuse")
 }

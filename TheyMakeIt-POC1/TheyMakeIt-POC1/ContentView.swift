@@ -52,7 +52,7 @@ struct ContentView: View {
                 
                 VStack {
                     ForEach(femme.reussites, id: \.self) { reussite in
-                        BubbleView()
+                        BubbleView(titre: reussite)
                     }
                 }
                 .padding()
