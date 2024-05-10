@@ -57,12 +57,11 @@
 		42890FE22BD8253C004BEEB7 /* TheyMakeIt-POC1 */ = {
 			isa = PBXGroup;
 			children = (
+				42B533462BEE6C5D000B6D61 /* ViewModel */,
+				42B533452BEE6C59000B6D61 /* View */,
+				42B533442BEE6C54000B6D61 /* Model */,
 				42890FE32BD8253C004BEEB7 /* TheyMakeIt_POC1App.swift */,
-				42890FE52BD8253C004BEEB7 /* ContentView.swift */,
-				42AD47982BDBE557006F3250 /* Model.swift */,
-				4283B9A42BDFA58A00755F29 /* BubbleView.swift */,
 				42890FE72BD8253D004BEEB7 /* Assets.xcassets */,
-				42AD479A2BDBE64B006F3250 /* ListingView.swift */,
 				42890FE92BD8253D004BEEB7 /* Preview Content */,
 			);
 			path = "TheyMakeIt-POC1";
@@ -74,6 +73,31 @@
 				42890FEA2BD8253D004BEEB7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		42B533442BEE6C54000B6D61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42AD47982BDBE557006F3250 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		42B533452BEE6C59000B6D61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4283B9A42BDFA58A00755F29 /* BubbleView.swift */,
+				42AD479A2BDBE64B006F3250 /* ListingView.swift */,
+				42890FE52BD8253C004BEEB7 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		42B533462BEE6C5D000B6D61 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
