@@ -24,55 +24,14 @@ struct ContentView: View {
                     .foregroundStyle(.purple)
                 
                 HStack {
-                    VStack {
-                        Image(systemName: "calendar")
-                            .padding(.bottom, 4)
-                        Text(femme.anneeNaissance)
-                            .font(.callout)
-                        Text("-")
-                            .font(.callout)
-                        Text(femme.anneeDeces)
-                            .font(.callout)
-                    }
-                    .frame(width: geometry.size.width/4, height: 100)
-                    .padding(4)
-                    .background(RoundedRectangle(cornerRadius: 10)
-                        .stroke(.purple, lineWidth: 2))
-                    
-                    VStack {
-                        Image(systemName: "bookmark")
-                            .padding(.bottom, 4)
-                        ForEach(femme.metiers, id: \.self) { metier in
-                            Text(metier)
-                                .font(.callout)
-                        }
-                    }
-                    .frame(width: geometry.size.width/3, height: 100)
-                    .padding(4)
-                    .background(RoundedRectangle(cornerRadius: 10)
-                        .stroke(.purple, lineWidth: 2))
-                    
-                    VStack {
-                        Image(systemName: "mappin.and.ellipse")
-                            .padding(.bottom, 4)
-                        ForEach(femme.nationalites, id: \.self) { nationalite in
-                            Text(nationalite)
-                                .font(.callout)
-                        }
-                    }
-                    .frame(width: geometry.size.width/4, height: 100)
-                    .padding(4)
-                    .background(RoundedRectangle(cornerRadius: 10)
-                        .stroke(.purple, lineWidth: 2))
+                    CardView(content: [femme.anneeNaissance,"-",femme.anneeDeces], width: geometry.size.width/4, pictoName: "calendar")
+                    CardView(content: femme.metiers, width: geometry.size.width/3, pictoName: "bookmark")
+                    CardView(content: femme.nationalites, width: geometry.size.width/4, pictoName: "mappin.and.ellipse")
                 }
                 
                 VStack {
                     ForEach(femme.reussites, id: \.self) { reussite in
-                        Text(reussite)
-                            .fontWeight(.bold)
-                            .padding(8)
-                            .background(RoundedRectangle(cornerRadius: 10).fill(.purple))
-                            .foregroundStyle(.white)
+                        BubbleView(titre: reussite)
                     }
                 }
                 .padding()
