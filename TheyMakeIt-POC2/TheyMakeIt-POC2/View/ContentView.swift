@@ -15,7 +15,7 @@ struct ContentView: View {
             VStack {
                 Image(femme.nomImage)
                     .resizable()
-                    .aspectRatio(contentMode: .fit)
+                    .aspectRatio(contentMode: .fill)
                     .frame(width: geometry.size.width)
                 
                 Text(femme.nom)
@@ -36,9 +36,11 @@ struct ContentView: View {
                 }
                 .padding()
                 
-                Text(femme.description)
-                    .font(.callout)
+                ScrollView {
+                    Text(femme.description)
+                        .font(.callout)
                     .padding()
+                }
             }
         }
     }

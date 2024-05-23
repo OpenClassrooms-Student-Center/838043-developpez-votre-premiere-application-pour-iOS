@@ -19,7 +19,8 @@ struct CardView: View {
             ForEach(content, id: \.self) { text in
                 Text(text)
                     .font(.callout)
-            }                
+                    .multilineTextAlignment(.center)
+            }
         }
         .frame(width: width, height: 100)
         .padding(4)
