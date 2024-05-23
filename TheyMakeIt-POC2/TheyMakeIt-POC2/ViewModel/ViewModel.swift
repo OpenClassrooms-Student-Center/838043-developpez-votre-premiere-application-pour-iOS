@@ -1,14 +1,14 @@
 //
-//  ListingView.swift
+//  ViewModel.swift
 //  TheyMakeIt-POC2
 //
-//  Created by Amandine Cousin on 26/04/2024.
+//  Created by Amandine Cousin on 23/05/2024.
 //
 
-import SwiftUI
+import Foundation
 
-struct ListingView: View {
-    private let listeFemmes: [Femme] = [
+class ViewModel {
+    let listeFemmes: [Femme] = [
         Femme(nom: "Hedy Lamarr", metiers: ["Actrice", "Inventrice"], nomImage: "Hedy", anneeNaissance: "1914", anneeDeces: "2000", nationalites: ["Autrichienne", "Américaine"], reussites: ["Télécommunications", "Ingénierie aéronautique"], description: "Hedy Lamarr était une actrice autrichienne qui a également été une inventrice prolifique. Elle est surtout connue pour son invention avec George Antheil, du système de saut de fréquence, une technologie fondamentale pour les communications sans fil modernes."),
         Femme(nom: "Grace Hopper", metiers: ["Informaticienne", "Militaire"], nomImage: "Grace", anneeNaissance: "1906", anneeDeces: "1992", nationalites: ["Américaine"], reussites: ["COBOL", "Premier compilateur"], description: "Grace Hopper était une pionnière de l'informatique, connue pour son travail sur le langage de programmation COBOL et pour avoir popularisé le concept de débogage informatique. Elle a joué un rôle majeur dans le développement des premiers ordinateurs, notamment le Mark I. Elle est la conceptrice du premier compilateur en 1951."),
         Femme(nom: "Audrey Tang", metiers: ["Programmeuse", "Activiste"], nomImage: "Audrey", anneeNaissance: "1981", nationalites: ["Taïwanaise"], reussites: ["Développement open-source", "Perl et Haskell"], description: "Audrey Tang, une programmeuse et activiste taïwanaise, est réputée pour son expertise en technologie et son engagement en faveur de la démocratie participative et de la gouvernance transparente à travers l'utilisation innovante de logiciels open-source et de plateformes numériques."),
@@ -18,37 +18,4 @@ struct ListingView: View {
         Femme(nom: "Reshma Saujani", metiers: ["Avocate", "Femme politique"], nomImage: "Reshma", anneeNaissance: "1975", nationalites: ["Américaine"], reussites: ["Fondatrice Girls Who Code", "Leadership pour la diversité"], description: "Elle est la fondatrice de l'organisation à but non lucratif Girls Who Code, qui vise à augmenter le nombre de femmes en informatique et à réduire la différence d'emploi entre les sexes dans ce domaine."),
         Femme(nom: "Radia Perlman", metiers: ["Ingénieure en informatique", "Chercheuse"], nomImage: "Radia", anneeNaissance: "1951", nationalites: ["Américaine"], reussites: ["Protocole SPT", "Protocole TRILL"], description: "Radia Perlman, une informaticienne américaine, est renommée pour ses contributions révolutionnaires dans le domaine des réseaux informatiques, notamment pour avoir développé des protocoles qui ont établi les fondements de la fiabilité et de la performance des réseaux modernes.")
     ]
-    
-    var body: some View {
-        NavigationSplitView{
-            List(listeFemmes, id: \.nom){ femme in
-                NavigationLink {
-                    ContentView(femme: femme)
-                } label: {
-                    CellView(femme: femme)
-                }
-            }
-        } detail: {
-            Text("Sélectionnez une femme de la liste pour en savoir plus")
-        }
-    }
-}
-
-fileprivate struct CellView: View {
-    let femme: Femme
-    
-    var body: some View {
-        HStack {
-            Image(femme.nomImage)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 70, height: 70)
-            .clipShape(Circle())
-            Text(femme.nom)
-        }
-    }
-}
-
-#Preview {
-    ListingView()
 }
